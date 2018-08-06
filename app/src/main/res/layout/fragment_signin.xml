@@ -1,0 +1,143 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/img_logo_signin"
+        android:layout_width="254dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@id/edt_username_signin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301" />
+
+    <EditText
+        android:id="@+id/edt_username_signin"
+        android:layout_width="256dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/button_bg_rectangle_curve_transparent"
+        android:fontFamily="@font/lato_light"
+        android:hint="@string/label_hint_email_signin"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingBottom="8dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/colorGreyFont"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_password_signin"
+        app:layout_constraintStart_toStartOf="@+id/edt_password_signin"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_signin" />
+
+    <ImageView
+        android:id="@+id/img_email_login_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_person"
+        android:tint="@color/colorPurple"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_username_signin"
+        app:layout_constraintEnd_toStartOf="@+id/edt_username_signin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_username_signin" />
+
+    <EditText
+        android:id="@+id/edt_password_signin"
+        android:layout_width="256dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_bg_rectangle_curve_transparent"
+        android:fontFamily="@font/lato_light"
+        android:hint="@string/label_hint_password_signin"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingBottom="8dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/colorGreyFont"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_lock_login_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/edt_username_signin" />
+
+    <ImageView
+        android:id="@+id/img_lock_login_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/ic_lock_white_24dp"
+        android:tint="@color/colorPurple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edt_password_signin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_email_login_fragment"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_login_signin"
+        android:layout_width="256dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_bg_rectangle"
+        android:fontFamily="@font/lato_light"
+        android:text="@string/label_login_signin"
+        android:textColor="@color/colorWhiteFont"
+        app:layout_constraintEnd_toEndOf="@+id/edt_password_signin"
+        app:layout_constraintStart_toStartOf="@+id/edt_password_signin"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password_signin" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_sign_in_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_create_account_signin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_create_account_signin"
+        app:layout_constraintTop_toBottomOf="@+id/txt_create_account_signin">
+
+    </com.google.android.gms.common.SignInButton>
+
+    <TextView
+        android:id="@+id/txt_create_account_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato_light"
+        android:padding="4dp"
+        android:text="@string/label_create_account_signin"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPurple"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login_signin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_login_signin"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_signin" />
+
+
+</android.support.constraint.ConstraintLayout>

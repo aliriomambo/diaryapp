@@ -1,0 +1,14 @@
+Guava
+
+Firebase Auth
+
+Firebase Realtime
+
+MVP
+
+Retrofit
+
+Dagger2
+
+
+

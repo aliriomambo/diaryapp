@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingTop="64dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/lato_light"
+            android:text="@string/label_txt_title_addeditentry"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/label_text_size_addeditentry" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_title_addeditentry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:maxLength="42"
+            android:maxLines="2"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/input_text_size_addeditentry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/lato_light"
+            android:text="@string/label_txt_feeling_addeditentry"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/label_text_size_addeditentry" />
+
+        <Spinner
+            android:id="@+id/spin_feelings_addeditentry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_feelings"
+            android:prompt="@string/prompt_spinner_feeling" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/lato_light"
+            android:text="@string/label_txt_description_addeditentry"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/label_text_size_addeditentry" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_description_addeditentry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/input_text_size_addeditentry" />
+
+
+        <Button
+            android:id="@+id/btn_submit_entry_addeditentry"
+            android:layout_width="256dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_bg_rectangle"
+            android:fontFamily="@font/lato_light"
+            android:text="@string/txt_submit_addeditentry"
+            android:textColor="@color/colorWhiteFont" />
+    </LinearLayout>
+
+</ScrollView>

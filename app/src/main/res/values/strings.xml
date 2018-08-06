@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">DiaryApp</string>
+
+    <!--- AddEditEntry Screen -->
+    <string name="error_empty_fields">Please fill the fields</string>
+    <string name="error_no_network_addedit">Please Connect to the network to enable the button</string>
+    <string name="prompt_spinner_feeling">What are you feeling?</string>
+    <string name="txt_submit_addeditentry">Submit Entry</string>
+
+    <string-array name="spinner_feelings">
+        <item>Happiness</item>
+        <item>Fear</item>
+        <item>Disgust</item>
+        <item>Anger</item>
+        <item>Sadness</item>
+        <item>Surprise</item>
+        <item>Contempt</item>
+    </string-array>
+
+
+    <!--- Credentials Screen -->
+    <string name="error_empty_fields_credential">Please fill the fields</string>
+    <string name="error_wrong_credentials">Wrong credentials</string>
+    <string name="error_password_pattern">Password must use between 8 and 16 characters</string>
+    <string name="error_no_network_credential">Please Connect to the network to enable the button</string>
+
+    <string name="msg_created_account_success">Created Account Succesfully</string>
+    <string name="msg_created_account_fail">Failed to Create Account</string>
+
+    <string name="label_login_signin">LOGIN</string>
+    <string name="label_create_account_signin">Don\'t Have an Account? Create One</string>
+    <string name="label_hint_password_signin">PASSWORD</string>
+    <string name="label_hint_email_signin">E-MAIL</string>
+
+    <string name="label_hint_full_name_signup">FULL NAME</string>
+    <string name="label_hint_email_signup">E-MAIL</string>
+    <string name="label_hint_password_signup">PASSWORD</string>
+    <string name="label_create_account_signup">CREATE ACCOUNT</string>
+
+    <!--- Entries Screen -->
+    <string name="msg_create_entry_label">Write Entry</string>
+    <string name="error_no_network_entries_fragment">Please Connect to the network and retry to get an updated list</string>
+    <string name="label_hint_search_by_title_or_feeling_entries">Search by title or feeling...</string>
+
+    <!--- EntryDetail Screen -->
+    <string name="action_edit">Edit Entry</string>
+    <string name="action_delete">Delete Entry</string>
+
+
+    <!-- Google API KEY -->
+    <string name="google_client_oid">AIzaSyB2zsWkm1YQMeZyDRcbH0jTnjOZX5OxeTg</string>
+    <string name="label_txt_feeling_addeditentry">What are you feeling?</string>
+    <string name="label_txt_description_addeditentry">Description</string>
+    <string name="label_txt_title_addeditentry">Title</string>
+</resources>
